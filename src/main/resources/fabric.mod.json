@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "extendeditems",
+  "version": "${0.5}",
+
+  "name": "Extended Items",
+  "description": "More Lame Items",
+  "authors": [
+    "Demonic_tako"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"takomods.extendedItems.ExtendedItems"
+    ],
+		"beforeGameStart": [
+			"takomods.extendedItems.ExtendedItems"
+		],
+		"afterGameStart": [
+			"takomods.extendedItems.ExtendedItems"
+		],
+		"recipesReady": [
+			"takomods.extendedItems.ExtendedItems"
+		],
+		"terrain-api": [
+			"takomods.extendedItems.TerrainApiPlugin"
+		]
+	},
+  "mixins": [
+		"takomods.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "^7.2-beta",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
